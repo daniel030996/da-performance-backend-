@@ -9,6 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const DVLA_API_KEY = process.env.DVLA_API_KEY;
 const DVLA_URL =
+  process.env.DVLA_API_URL ||
   "https://driver-vehicle-licensing.api.gov.uk/vehicle-enquiry/v1/vehicles";
 
 if (!DVLA_API_KEY) {
